@@ -1,4 +1,4 @@
-{% set version = '1.4.1' %}
+{% set version = "1.4.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/celestial_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/celestial/celestial_{{ version }}.tar.gz
-  sha256: 7f1e0a607f4683519a0d3576de1f33d5fdc9e0d7c8e87e1a4b5203498b9a6e33
+  sha256: 9f647f41465ac65b254717698f1978871c378ad8e6ccaa693abf579437069abe
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
