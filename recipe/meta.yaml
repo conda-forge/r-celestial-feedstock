@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: celestial_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/celestial_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/celestial/celestial_{{ version }}.tar.gz
@@ -42,7 +41,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=celestial
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Contains a number of common astronomy conversion routines, particularly the HMS and
     degrees schemes, which can be fiddly to convert between on mass due to the textural
     nature of the former. It allows users to coordinate match datasets quickly. It also
@@ -53,10 +52,4 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
     - npavlovikj
