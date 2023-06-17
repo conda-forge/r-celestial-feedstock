@@ -1,11 +1,11 @@
-About r-celestial
-=================
+About r-celestial-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-celestial-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=celestial
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-celestial-feedstock/blob/main/LICENSE.txt)
 
 Summary: Contains a number of common astronomy conversion routines, particularly the HMS and degrees schemes, which can be fiddly to convert between on mass due to the textural nature of the former. It allows users to coordinate match datasets quickly. It also contains functions for various cosmological calculations.
 
