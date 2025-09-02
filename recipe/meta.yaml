@@ -1,4 +1,4 @@
-{% set version = "1.4.6" %}
+{% set version = "1.5.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/celestial_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/celestial/celestial_{{ version }}.tar.gz
-  sha256: 9f647f41465ac65b254717698f1978871c378ad8e6ccaa693abf579437069abe
+  sha256: 2c6fc002e0313658a970873461846e11bdc205038e120b4b27f305ca2996d2f4
 
 build:
   noarch: generic
-  number: 5
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,10 +40,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=celestial
   license: GPL-3.0-only
-  summary: Contains a number of common astronomy conversion routines, particularly the HMS and
-    degrees schemes, which can be fiddly to convert between on mass due to the textural
-    nature of the former. It allows users to coordinate match datasets quickly. It also
-    contains functions for various cosmological calculations.
+  summary: Contains a number of common astronomy conversion routines, particularly the HMS and degrees schemes, which can be fiddly to convert between on mass due to the textural nature of the former. It allows users to coordinate match datasets quickly. It also contains functions for various cosmological calculations.
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
